@@ -1,7 +1,6 @@
 import express from "express";
 
 const app = express();
-
 app.use(express.json());
 
 const livros = [
@@ -37,5 +36,8 @@ function buscaLivro(id) {
     return livros.findIndex(livro => livro.id == id)
 }
 
-
 export default app;
+
+
+
+// Foi feito o update

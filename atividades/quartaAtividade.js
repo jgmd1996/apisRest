@@ -31,3 +31,10 @@ export default app;
 //conseguimos ler dados da API, fazer uma requisição para obter 
 //livros e já conseguimos fazer uma requisição para cadastrar 
 //livros na variável em memória
+
+
+
+//Vimos que para testar nossa API e fazer requisições do tipo 
+//POST, foi necessário utilizar o aplicativo Postman, que nos 
+//permitiu selecionar de forma simples o verbo HTTP a ser 
+//utilizado na requisição. Para complementar os estudos.
