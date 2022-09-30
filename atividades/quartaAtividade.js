@@ -1,3 +1,4 @@
+
 import express from "express";
 
 const app = express();
@@ -22,3 +23,11 @@ app.post('/livros', (req,res) => {
     res.status(201).send('LIvros foi cadastrado com sucesso');
 });
 export default app;
+
+
+
+
+
+//conseguimos ler dados da API, fazer uma requisição para obter 
+//livros e já conseguimos fazer uma requisição para cadastrar 
+//livros na variável em memória

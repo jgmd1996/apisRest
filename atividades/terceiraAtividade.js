@@ -40,6 +40,17 @@ export default app;
 
 
 
-// foi feito a conexao com o express
+// foi feito 
+
+
+
+//Nessa aula começamos a ver a importância de se utilizar um 
+//framework para poder ganhar agilidade no desenvolvimento e 
+//evitar retrabalho escrevendo código ou fazendo melhorias já 
+//implementadas. Para saber mais sobre frameworks em geral, 
+//confira esse artigo que explica em detalhes os prós e contras 
+//e exemplifica alguns frameworks por linguagem.
+
+// link = https://www.alura.com.br/artigos/framework-o-que-e-pra-que-serve-essa-ferramenta
 
 
