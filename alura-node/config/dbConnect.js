@@ -1,6 +1,9 @@
 import mongoose from "mongoose"
 
-mongoose.connect("mongodb+srv://joao:gabriel123@restapi.yjr45py.mongodb.net/?alura-node");
+//mongoose.connect('mongodb//localhost:27017/test'); erro 
+//mongoose.connect("mongodb+srv://alura:123@alura.dkjed.mongodb.net/alura-node"); erro
+mongoose.connect("mongodb+srv://alura:123@alura.fway2xr.mongodb.net/?retryWrites=true&w=majority");
+
 
 let db = mongoose.connection;
 
