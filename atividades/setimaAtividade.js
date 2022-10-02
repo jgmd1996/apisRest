@@ -82,4 +82,4 @@ function buscaLivro(id) {
 }
 
 
-export default app;
+//export default app;
