@@ -1,3 +1,5 @@
+// app.js
+
 import express from "express";
 import db from "./config/dbConnect.js"
 import livros from "./models/Livro.js"
@@ -48,3 +50,56 @@ function buscaLivro(id) {
 }
 
 export default app
+
+
+////////////////////////////////////////////////////////
+
+// index da router
+
+import  express  from "express";
+import livros from "./livrosRoutes.js";
+
+const routes = (app) => {
+    app.route('/').get((req, res) =>{
+        res.status(200).send({titulo: "Curso de node"})
+    })
+
+    app.use(
+        express.json(),
+        livros
+    )
+}
+
+//export default routes;
+
+///////////////////////////////////////////
+
+/// livrosRoutes
+
+import express from "express";
+import LivroController from "../controllers/livrosController.js";
+
+const router = express.Router();
+
+router
+.get("/livros", LivroController.listarLivros)
+
+//export default router;
+
+
+/////////////////////////
+
+// livros controller
+
+import livros from "../models/Livro.js";
+
+class LivroController {
+
+    static listarLivros = (req, res) => {
+        livros.find((err, livros) => {
+        res.status(200).json(livros)
+    })
+    }
+}
+
+//export default LivroController;
